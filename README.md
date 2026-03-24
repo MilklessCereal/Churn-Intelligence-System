@@ -154,7 +154,7 @@ churn_project/
 │
 ├── models/
 │   └── <company>/
-│       ├── pipeline.pkl        # Fitted model pipeline
+│       ├── pipeline.pkl        # Trained model, Encoder, Imputer
 │       ├── schema.json         # Feature schema and risk thresholds
 │       └── model_metrics.csv   # Evaluation metrics
 │
