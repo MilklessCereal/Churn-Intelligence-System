@@ -24,7 +24,7 @@ This project presents a machine learning pipeline for predicting customer churn 
 
 ## Background
 
-Customer churn — the rate at which customers discontinue their relationship with a service provider — represents a significant challenge in subscription-based industries such as telecommunications, SaaS, and financial services. Acquiring a new customer is estimated to cost five to seven times more than retaining an existing one, making proactive churn identification a high-value business problem.
+Customer churn - the rate at which customers discontinue their relationship with a service provider - represents a significant challenge in subscription-based industries such as telecommunications, SaaS, and financial services. Acquiring a new customer is estimated to cost five to seven times more than retaining an existing one, making proactive churn identification a high-value business problem.
 
 Existing approaches frequently frame churn prediction as a binary classification task, producing a hard yes/no label. This framing discards the probabilistic uncertainty inherent in customer behaviour and limits the ability to prioritise retention interventions. This system instead models churn as a probability estimation problem, producing a continuous risk score per customer that supports ranked intervention strategies and campaign targeting by risk tier.
 
@@ -50,8 +50,8 @@ The system is composed of two independent pipelines:
 
 Responsible for data ingestion, feature engineering, model training, hyperparameter optimisation, and artifact persistence. Implements a two-pass training strategy:
 
-- **Pass 1** — Trains on the full engineered feature set to measure XGBoost feature importances
-- **Pass 2** — Retrains on the reduced feature set after pruning low-importance features (importance < 0.01), producing the final deployable model
+- **Pass 1** - Trains on the full engineered feature set to measure XGBoost feature importances
+- **Pass 2** - Retrains on the reduced feature set after pruning low-importance features (importance < 0.01), producing the final deployable model
 
 ### Prediction Pipeline (`predict_pipeline.py`)
 
@@ -78,7 +78,7 @@ Each trained model persists three artifacts to `models/<company>/`:
 - Standard scaling for numeric features
 - One-hot encoding for categorical features
 
-All preprocessing is encapsulated within the sklearn `Pipeline` object to prevent data leakage — fit parameters are derived exclusively from training data and applied statically to the test set.
+All preprocessing is encapsulated within the sklearn `Pipeline` object to prevent data leakage - fit parameters are derived exclusively from training data and applied statically to the test set.
 
 ### Resampling
 
