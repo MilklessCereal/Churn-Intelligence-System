@@ -69,7 +69,7 @@ All preprocessing is encapsulated within the sklearn `Pipeline` object to preven
 
 ### Resampling
 
-`SMOTETomek` is applied within the pipeline to address class imbalance. SMOTETomek combines SMOTE oversampling of the minority class with Tomek link removal to clean borderline samples, producing a more balanced and less noisy training distribution.
+For simulation purposes, Scikit Learn's Resampling function can be used to generate synthetic datasets from the existing datasets. Using Scikit Learn's Resampling library ensures that the generated dataset represents real value distributions from the original dataset.
 
 ### Model
 
