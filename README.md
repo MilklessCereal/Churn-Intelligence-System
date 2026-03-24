@@ -9,6 +9,7 @@ This project presents a machine learning pipeline for predicting customer churn 
 ## Table of Contents
 
 - [Background](#background)
+- [Datasets](#dataset)
 - [System Architecture](#system-architecture)
 - [Methodology](#methodology)
 - [Feature Engineering](#feature-engineering)
@@ -26,6 +27,16 @@ This project presents a machine learning pipeline for predicting customer churn 
 Customer churn — the rate at which customers discontinue their relationship with a service provider — represents a significant challenge in subscription-based industries such as telecommunications, SaaS, and financial services. Acquiring a new customer is estimated to cost five to seven times more than retaining an existing one, making proactive churn identification a high-value business problem.
 
 Existing approaches frequently frame churn prediction as a binary classification task, producing a hard yes/no label. This framing discards the probabilistic uncertainty inherent in customer behaviour and limits the ability to prioritise retention interventions. This system instead models churn as a probability estimation problem, producing a continuous risk score per customer that supports ranked intervention strategies and campaign targeting by risk tier.
+
+---
+
+## Datasets
+
+The datasets used are sourced from Kagge. To avoid any breaching of licenses, the datasets used in the prediction are not included in this repo but can be downloaded below:
+
+Telco Customer Churn: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+
+Customer Churn: https://www.kaggle.com/datasets/royjafari/customer-churn
 
 ---
 
