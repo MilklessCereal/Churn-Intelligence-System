@@ -38,6 +38,8 @@ Telco Customer Churn: https://www.kaggle.com/datasets/blastchar/telco-customer-c
 
 Customer Churn: https://www.kaggle.com/datasets/royjafari/customer-churn
 
+However, the resampled datasets created during my initial test run are available for use.
+
 ---
 
 ## System Architecture
