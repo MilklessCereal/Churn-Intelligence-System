@@ -51,7 +51,7 @@ Responsible for data ingestion, feature engineering, model training, hyperparame
 - **Pass 1** — Trains on the full engineered feature set to measure XGBoost feature importances
 - **Pass 2** — Retrains on the reduced feature set after pruning low-importance features (importance < 0.01), producing the final deployable model
 
-### Prediction Pipeline (`predict.py`)
+### Prediction Pipeline (`predict_pipeline.py`)
 
 Responsible for loading trained artifacts, applying identical feature engineering, generating churn probability scores, and producing SHAP-based explanations for each prediction. Outputs a CSV containing churn probability, risk tier, and top contributing risk factors per customer.
 
@@ -148,7 +148,7 @@ churn_project/
 │
 ├── src/
 │   ├── train_pipeline.py       # Model training, feature engineering, artifact persistence
-│   └── predict.py              # Probability prediction and SHAP explanation
+│   └── predict_pipeline.py              # Probability prediction and SHAP explanation
 │
 ├── models/
 │   └── <company>/
