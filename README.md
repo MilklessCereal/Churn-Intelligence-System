@@ -80,10 +80,6 @@ Each trained model persists three artifacts to `models/<company>/`:
 
 All preprocessing is encapsulated within the sklearn `Pipeline` object to prevent data leakage - fit parameters are derived exclusively from training data and applied statically to the test set.
 
-### Resampling
-
-For simulation purposes, Scikit Learn's Resampling function can be used to generate synthetic datasets from the existing datasets. Using Scikit Learn's Resampling library ensures that the generated dataset represents real value distributions from the original dataset.
-
 ### Model
 
 `XGBClassifier` (XGBoost) is used as the base estimator. XGBoost's gradient boosting framework iteratively corrects residuals from previous trees, producing sharper decision boundaries than ensemble averaging methods such as Random Forest on tabular data.
@@ -140,6 +136,12 @@ The system is evaluated exclusively on probability-quality metrics, consistent w
 | **Brier Skill Score** | Brier Score normalised against the no-skill baseline (predicting the mean churn rate for all customers). Represents percentage improvement over naive prediction. |
 
 Binary classification metrics (accuracy, precision, recall, F1) are intentionally omitted as they require an arbitrary threshold decision that is not relevant to the probability estimation objective.
+
+---
+
+### Resampling
+
+For simulation purposes, Scikit Learn's Resampling function can be used to generate synthetic datasets from the existing datasets. Using Scikit Learn's Resampling library ensures that the generated dataset represents real value distributions from the original dataset.
 
 ---
 
