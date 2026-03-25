@@ -176,7 +176,6 @@ churn_project/
 pandas
 numpy
 scikit-learn
-imbalanced-learn
 xgboost
 optuna
 shap
