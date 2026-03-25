@@ -150,7 +150,7 @@ For simulation purposes, Scikit Learn's Resampling function can be used to gener
 
 ### Actionable Insights
 
-Actionable insights in response to the generated churn risks inferred from SHAP are implemented in two separate methods. 
+Actionable insights: Response to generated churn risks inferred from SHAP are implemented in two separate methods. 
 
 Rule-Based Response - A deterministic rule-based approach that maps customer feature patterns to predefined retention strategies using regular expression matching within tuples.
 
