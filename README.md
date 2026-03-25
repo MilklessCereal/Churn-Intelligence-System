@@ -14,6 +14,7 @@ This project presents a machine learning pipeline for predicting customer churn 
 - [Methodology](#methodology)
 - [Feature Engineering](#feature-engineering)
 - [Model Evaluation](#model-evaluation)
+- [Prediction Simulation](#prediction-simulation)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
 - [Usage](#usage)
@@ -138,6 +139,8 @@ The system is evaluated exclusively on probability-quality metrics, consistent w
 Binary classification metrics (accuracy, precision, recall, F1) are intentionally omitted as they require an arbitrary threshold decision that is not relevant to the probability estimation objective.
 
 ---
+
+## Prediction Simulation
 
 ### Resampling
 
