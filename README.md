@@ -33,11 +33,13 @@ Existing approaches frequently frame churn prediction as a binary classification
 
 ## Dataset
 
-The datasets used are sourced from Kagge. To avoid any breaching of licenses, the datasets used in the prediction are not included in this repo but can be downloaded below:
+To avoid any breaching of licenses, the datasets used in the prediction are not included in this repo but can be downloaded below:
 
-Telco Customer Churn: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+Telco Customer Churn: 
+https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
-Customer Churn: https://www.kaggle.com/datasets/royjafari/customer-churn
+Customer Churn: 
+https://www.kaggle.com/datasets/royjafari/customer-churn
 
 However, the resampled datasets created during my initial test run are available for use.
 
