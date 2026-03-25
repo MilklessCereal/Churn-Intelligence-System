@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This project presents a machine learning pipeline for predicting customer churn probability in subscription-based business environments. Rather than producing binary churn classifications, the system outputs calibrated churn probabilities, enabling nuanced risk segmentation and data-driven retention strategies. The pipeline employs XGBoost with Bayesian hyperparameter optimisation via Optuna, isotonic probability calibration, and SHAP-based explainability to produce interpretable, actionable predictions. The system is designed to be dataset-agnostic, supporting multiple companies and datasets through a schema-driven feature validation architecture.
+This project presents a machine learning pipeline for predicting customer churn probability in subscription-based business environments. Rather than producing binary churn classifications, the system outputs calibrated churn probabilities, enabling nuanced risk segmentation and data-driven retention strategies. The pipeline employs XGBoost with Bayesian hyperparameter optimisation via Optuna, isotonic probability calibration, and SHAP-based explainability to produce interpretable, actionable predictions. Using Ollama's 'llama3.2' model, churn risks factors are derived from the prediction phase through SHAP is inputted as prompts to generate a reponse. The system is designed to be dataset-agnostic, supporting multiple companies and datasets through a schema-driven feature validation architecture.
 
 ---
 
@@ -147,6 +147,20 @@ Binary classification metrics (accuracy, precision, recall, F1) are intentionall
 ### Resampling
 
 For simulation purposes, Scikit Learn's Resampling function can be used to generate synthetic datasets from the existing datasets. Using Scikit Learn's Resampling library ensures that the generated dataset represents real value distributions from the original dataset.
+
+### Actionable Insights
+
+Actionable insights in response to the generated churn risks inferred from SHAP are implemented in two separate methods. 
+
+Rule-Based Response - A deterministic rule-based approach that maps customer feature patterns to predefined retention strategies using regular expression matching within tuples.
+
+LLM-Generation - Churn risk factors prompt the local Ollama 'llama3.2' model to generate a response.
+
+| Factor | Rule-Based | LLM-Generation |
+|---|---|---|
+| **Simplicity** | Simpler | More Complex and reliant on locally hosted LLMs |
+| **Flexibility** | Rigid and limited to manually set reponses | Several times more flexible |
+| **Performance** | Faster in execution | Latency from LLM processing and generation |
 
 ---
 
