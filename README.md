@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This project presents a machine learning pipeline for predicting customer churn probability in subscription-based business environments. Rather than producing binary churn classifications, the system outputs calibrated churn probabilities, enabling nuanced risk segmentation and data-driven retention strategies. The pipeline employs XGBoost with Bayesian hyperparameter optimisation via Optuna, isotonic probability calibration, and SHAP-based explainability to produce interpretable, actionable predictions. Using Ollama's 'llama3.2' model, churn risks factors are derived from the prediction phase through SHAP is inputted as prompts to generate a reponse. The system is designed to be dataset-agnostic, supporting multiple companies and datasets through a schema-driven feature validation architecture.
+This project presents a machine learning pipeline for predicting customer churn probability in subscription-based business environments. Rather than producing binary churn classifications, the system outputs calibrated churn probabilities, enabling nuanced risk segmentation and data-driven retention strategies. The pipeline employs XGBoost with Bayesian hyperparameter optimisation via Optuna, isotonic probability calibration, and SHAP-based explainability to produce interpretable, actionable predictions. Using Ollama's `llama3.2` model, churn risks factors are derived from the prediction phase through SHAP is inputted as prompts to generate a reponse. The system is designed to be dataset-agnostic, supporting multiple companies and datasets through a schema-driven feature validation architecture.
 
 ---
 
@@ -154,7 +154,7 @@ Actionable insights in response to the generated churn risks inferred from SHAP 
 
 Rule-Based Response - A deterministic rule-based approach that maps customer feature patterns to predefined retention strategies using regular expression matching within tuples.
 
-LLM-Generation - Churn risk factors prompt the local Ollama 'llama3.2' model to generate a response.
+LLM-Generation - Churn risk factors prompt the local Ollama `llama3.2` model to generate a response.
 
 | Factor | Rule-Based | LLM-Generation |
 |---|---|---|
