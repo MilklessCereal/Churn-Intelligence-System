@@ -30,7 +30,7 @@ Existing approaches frequently frame churn prediction as a binary classification
 
 ---
 
-## Datasets
+## Dataset
 
 The datasets used are sourced from Kagge. To avoid any breaching of licenses, the datasets used in the prediction are not included in this repo but can be downloaded below:
 
@@ -263,3 +263,4 @@ The Brier Skill Score of 0.306 indicates the model produces churn probability es
 - Implement model versioning to support performance tracking across retraining iterations
 - Extend evaluation with a reliability diagram to visually assess calibration quality
 - Explore cost-sensitive threshold selection using business-defined misclassification costs for downstream retention campaign targeting
+- Implement GUI implementation to replace CLI reliance
